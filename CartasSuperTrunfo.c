@@ -1,23 +1,38 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
+    char estado ;
+    char codigo[4];
+    char nome[50];
+    int populacao;
+    float area;
+    float pib;
+    int turistico;
 
-int main() {
-printf("Cartas Super trunfo")
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    printf("Digite qual será a letra do seu estado (A-H):\n");
+    scanf("%c", &estado);
+    printf("Selecione o código para a carta (A01-A04):\n");
+    scanf("%s", &codigo);
+    printf("Digite qual o nome do estado:\n");
+    scanf("%s", &nome);
+    printf("Digite qual é a população desse estado:\n");
+    scanf("%d", &populacao);
+    printf("Digite a área do estado em km²:\n");
+    scanf("%f", &area);
+    printf("Digite o PIB em bilhões de reais:\n");
+    scanf("%f", &pib);
+    printf("Digite quantos pontos turísticos tem o estado:\n");
+    scanf("%d", &turistico);
 
-    ;return 0;
+    printf("Cidade cadastrada com sucesso:\n");
+    printf("Estado: %c\n", estado);
+    printf("Código da carta: %s\n", codigo);
+    printf("Nome da cidade: %s\n", nome);
+    printf("População do estado: %d\n", populacao);
+    printf("Área em km²: %.2f km²\n", area);
+    printf("PIB: %.2f bilhões de reais\n", pib);
+    printf("Número de pontos turísticos: %d\n", turistico);
+
+
+    return 0;
 }
