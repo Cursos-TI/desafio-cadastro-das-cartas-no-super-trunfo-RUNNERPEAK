@@ -24,7 +24,7 @@ int main(){
     printf("Digite quantos pontos turísticos tem o estado:\n");
     scanf("%d", &turistico);
 
-    printf("Cidade cadastrada com sucesso:\n");
+    printf("Parabéns, cidade cadastrada com sucesso :\n");
     printf("Estado: %c\n", estado);
     printf("Código da carta: %s\n", codigo);
     printf("Nome da cidade: %s\n", nome);
