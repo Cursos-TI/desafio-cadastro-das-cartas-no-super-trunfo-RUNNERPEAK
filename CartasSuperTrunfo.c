@@ -117,7 +117,23 @@ int main(){
             }
             break;
 
-            
+            case 3:
+            if (densidade > densidade1){
+                
+            }
+
+
+
+            case 0:
+            printf("Saindo do menu!");
+            break;
+
+            default:
+            printf("Opção inválida, escolha uma disponível");
+            break;
+
+        }
+    }while (opcao != 0);
 
             return 0;
 }
