@@ -1,26 +1,18 @@
 #include <stdio.h>
 
+
 int main(){
-    char estado ;
-    char codigo[4];
-    char nome[50];
-    int populacao;
-    float area;
-    float densidade;
-    float pib;
-    float capita;
-    int turistico;
+    //Primeira carta
+    char estado; codigo[4]; nome[50];
+    int populacao; turistico;
+    float area; capita; pib; densidade;
 
-    char estado1 ;
-    char codigo1[4];
-    char nome1[50];
-    int populacao1;
-    float area1;
-    float densidade1;
-    float pib1;
-    float capita1;
-    int turistico1;   
-
+    //Segunda carta
+    char estado1; codigo1[4]; nome1[50];
+    int populacao1; turistico1;
+    float area1; capita1; pib1; densidade1;
+    
+ 
     printf("Digite qual será a letra da pirmeira carta (A-H):\n");
     scanf(" %c", &estado);
     printf("Selecione o código para a carta (A01-A04):\n");
@@ -70,6 +62,8 @@ int main(){
     printf("PIB per capita: %.2f reais\n", capita);
     printf("Número de pontos turísticos: %d\n", turistico);
 
+
+
     printf("Parabéns, segunda carta cadastrada com sucesso :\n");
     printf("Estado: %c\n", estado1);
     printf("Código da carta: %s\n", codigo1);
@@ -81,6 +75,14 @@ int main(){
     printf("PIB per capita: %.2f reais\n", capita1);
     printf("Número de pontos turísticos: %d\n", turistico1);
 
-
-    return 0;
-}
+    if (populacao > populacao1){
+        printf("O estado %s é mais populoso que o estado %s\n", nome, nome1);
+    }else if (populacao < populacao1){
+        printf("O estado %s é mais populoso que o estado %s\n", nome1, nome);
+    }else {
+        printf("A população dos dois estados são iguais\n");
+    }
+    
+        return 0;
+    }
+    
