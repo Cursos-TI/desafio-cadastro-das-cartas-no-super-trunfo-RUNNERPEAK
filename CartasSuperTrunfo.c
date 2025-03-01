@@ -21,7 +21,7 @@ int main(){
     float capita1;
     int turistico1;   
 
-    printf("Digite qual será a letra do seu estado (A-H):\n");
+    printf("Digite qual será a letra da pirmeira carta (A-H):\n");
     scanf(" %c", &estado);
     printf("Selecione o código para a carta (A01-A04):\n");
     scanf("%s", codigo);
@@ -36,7 +36,7 @@ int main(){
     printf("Digite quantos pontos turísticos tem o estado:\n");
     scanf("%d", &turistico);
 
-    printf("Digite qual será a letra do seu estado (A-H):\n");
+    printf("Digite qual será a letra da segunda carta (A-H):\n");
     scanf(" %c", &estado1);
     printf("Selecione o código para a carta (A01-A04):\n");
     scanf("%s", codigo1);
