@@ -100,7 +100,7 @@ int main(){
         printf("0. Sair do menu\n");
         scanf("%d", &opcao);
 
-        //COMPARAÇÃO COM O IF, ONDE TERÁ UMA SAÍDA INFORMANDO QUAL CARTA GANHOU POR TER MAIS HABITANTES.
+        //COMPARAÇÃO COM O IF, ONDE TERÁ UMA SAÍDA INFORMANDO QUAL CARTA GANHOU, QUAL PERDEU, A QUANTIDADE DO QUE FOI COMPARADO, E O NOME DO ESTADO VENCEDOR
         switch (opcao){
             case 1:
             if (populacao > populacao1){
