@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 
 
@@ -97,10 +98,11 @@ int main(){
         printf("5. Comparar o PIB per capita entre as cartas\n");
         printf("6. Comparar os pontos turísticos entre as cartas\n");
         printf("7. Comparar o superpoder entre as cartas\n");
-        printf("0. Sair do menu\n");
+        printf("0. Sair do menu\n\n");
+        printf("Escolha uma opção: ");
         scanf("%d", &opcao);
 
-        //COMPARAÇÃO COM O IF, ONDE TERÁ UMA SAÍDA INFORMANDO QUAL CARTA GANHOU, QUAL PERDEU, A QUANTIDADE DO QUE FOI COMPARADO, E O NOME DO ESTADO VENCEDOR
+        //COMPARAÇÃO COM O IF, ONDE TERÁ UMA SAÍDA INFORMANDO QUAL CARTA GANHOU POR TER MAIS HABITANTES.
         switch (opcao){
             case 1:
             if (populacao > populacao1){
@@ -114,6 +116,7 @@ int main(){
             }
             break;
             
+            //COMPARAÇÃO COM O IF, ONDE TERÁ UMA SAÍDA INFORMANDO QUAL CARTA GANHOU POR TER MAIOR ÁREA.
             case 2:
             if (area > area1){
                 printf("A área de %s é maior, com %'.2f km², enquanto %s possui %'.2f km².\n", nome, area, nome1, area1);
@@ -126,6 +129,7 @@ int main(){
             }
             break;
 
+            //COMPARAÇÃO COM O IF, ONDE TERÁ UMA SAÍDA INFORMANDO QUAL CARTA GANHOU POR TER MENOR DENSIDADE.
             case 3:
             if (densidade < densidade1){
                 printf("A densidade populacional de %s é menor, com %'.2f habitantes por km², enquanto %s possui uma densidade de %'.2f habitantes por km².\n", nome, densidade, nome1, densidade1);
@@ -138,6 +142,7 @@ int main(){
             }
             break;
             
+            //COMPARAÇÃO COM O IF, ONDE TERÁ UMA SAÍDA INFORMANDO QUAL CARTA GANHOU POR TER MAIOR PIB.
             case 4:
             if(pib > pib1){
                 printf("O PIB de %s é de %'.2f bilhões de reais, enquanto o de %s é de %'.2f bilhões de reais.\n", nome, pib, nome1, pib1);
@@ -150,6 +155,7 @@ int main(){
             }
             break;
 
+            //COMPARAÇÃO COM O IF, ONDE TERÁ UMA SAÍDA INFORMANDO QUAL CARTA GANHOU POR TER MAIOR RENDA PER CAPITA.
             case 5:
             if(capita > capita1){
                 printf("O PIB per capita de %s é de %'.2f reais, enquanto o de %s é de %'.2f reais.\n", nome, capita, nome1, capita1);
@@ -162,6 +168,7 @@ int main(){
             }
             break;
 
+            //COMPARAÇÃO COM O IF, ONDE TERÁ UMA SAÍDA INFORMANDO QUAL CARTA GANHOU POR TER MAIS PONTOS TURÍSTICOS.
             case 6:
             if(turistico > turistico1){
                 printf("A cidade de %s possui %d pontos turisticos, enquanto %s possui %d\n", nome, turistico, nome1, turistico1);
@@ -173,7 +180,8 @@ int main(){
                 printf("Ambas possuem o mesmo número de pontos turísticos, empate !\n");
             }
             break;
-
+ 
+            //COMPARAÇÃO COM O IF, ONDE TERÁ UMA SAÍDA INFORMANDO QUAL CARTA GANHOU POR TER MAIS "SUPERPODER".
             case 7 :
             if (superpoder > superpoder1){
                 printf("O superpoder de %s é de %'.2f, enquanto %s possui %'.2f.\n", nome, superpoder, nome1, superpoder1);
@@ -186,15 +194,19 @@ int main(){
             }
             break;
 
+            //SAÍDA DO MENU.
             case 0:
             printf("Saindo do menu!");
             break;
 
+            //CASO SEJA DIGITADO UMA OPÇÃO INVÁLIDA.
             default:
             printf("Opção inválida, escolha uma disponível");
             break;
 
         }
+
+        //FIM DO LOOP DO-WHILE 
     }while (opcao != 0);
 
             return 0;
